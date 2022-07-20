@@ -1,0 +1,79 @@
+main{
+  margin-top: 70px;
+}
+
+#search-button{
+  color:white;
+  border-color: white;
+}
+
+#search-button:hover{
+  color:#343a40;
+  border-color: #343a40;
+  background-color: white;
+}
+
+#dark-mode-switch{
+  color:white;
+  border:0px;
+  background-color: #212529;
+}
+
+.card{
+  background-color:transparent;
+  margin: 20px;
+  text-align: center;
+}
+
+.title{
+  text-align: center;
+}
+
+
+.icon{
+  width: 45%;
+  height: 45%;
+  max-width: 130px;
+  max-height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 10px;
+  border-radius: 30px;
+  background-color:lightgrey;
+}
+
+
+/*dark mode styles*/
+.dark-mode {
+  background-color: #343a40;
+  color: white;
+}
+
+.dark-mode .row{
+  color: white;
+} 
+
+.dark-mode .btn:hover{
+  background-color: white;
+  border-color: #343a40;
+  color: #343a40;
+} 
+
+.dark-mode .card{
+  border-color: white;
+}
+
+.dark-mode .carousel-control-next, .dark-mode .carousel-control-prev{
+    filter: invert(0%);
+}
+
+.dark-mode #carousel-btn1, .dark-mode #carousel-btn2, .dark-mode #carousel-btn3{
+  background-color:white;
+}
+
+.dark-mode .carousel-caption, .dark-mode p, .dark-mode h5{
+  color: white;
+}
+
