@@ -1,11 +1,11 @@
 const API_KEY = '893659fbe4f5dfbb6499a4c2b0e8ad50'
-// function to request data
+
 var request = async url => {
     const response = await fetch(url);
     return response.ok ? response.json() : Promise.reject({ error: 500 });
 };
 
-// function to get data with a request
+
 const getWeatherInfo = async (latitude, longitude) => {
     try {
         const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=minutely,hourly&units=metric&lang=it&appid=${API_KEY}`;
@@ -26,7 +26,7 @@ const getWeatherInfo = async (latitude, longitude) => {
     }
 };
 
-// after document loaded, get data if user grant consent to its device position 
+
 document.addEventListener('DOMContentLoaded', () => {
     navigator.geolocation.getCurrentPosition(position => {
         const { latitude, longitude } = position.coords;
